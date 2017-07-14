@@ -263,6 +263,10 @@ h2 {
 }
 
 @media(max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+
   .logo {
     width: 70px;
     height: 70px;
@@ -270,6 +274,7 @@ h2 {
 
   .message {
     width: 100%;
+    margin-top: 70px;
   }
 
   .popup-text {
