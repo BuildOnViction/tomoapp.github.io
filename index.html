@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Tomo Coin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/slideshow.css">
+	<link rel="stylesheet" href="./css/loading.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/slideshow.js"></script>
+	<script src="./js/constellation.js"></script>
+	<script src="./js/submitemail.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			var e = document.getElementById('loading');
+			e.style.display = 'none';
+		}, false);
+	</script>
+</head>
+<body>
+	<div id="loading" style="position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+		display: flex;
+		align-items: center;
+		background: #fff;
+		z-index: 999">
+		<div class="sk-folding-cube">
+			<div class="sk-cube1 sk-cube"></div>
+			<div class="sk-cube2 sk-cube"></div>
+			<div class="sk-cube4 sk-cube"></div>
+			<div class="sk-cube3 sk-cube"></div>
+		</div>
+	</div>
+	<div class="slider" id="main-slider">
+		<div class="slider-wrapper">
+			<img src="./imgs/background1.jpg" alt="First" class="slide" />
+			<img src="./imgs/background2.jpg" alt="Second" class="slide" />
+			<img src="./imgs/background3.jpg" alt="Third" class="slide" />
+			<img src="./imgs/background4.jpg" alt="Four" class="slide" />
+		</div>
+	</div>
+
+	<!-- Overlay and Constellation effect -->
+	<div class="global_overlay">
+		<canvas id="constellationel" width="100%" height="100%"></canvas>
+		<div class="overlay skew-part"></div>
+	</div>
+
+	<div class="container">
+		<div class="logo">
+			<img src="./imgs/1.png" class="logo1"></img>
+			<img src="./imgs/2.png" class="logo2"></img>
+			<img src="./imgs/t.png" class="logot"></img>
+		</div>
+		<div class="message">
+			<h2>ICO</h2>
+			<h1>COMING SOON</h1>
+			<div class="message-text">The Proof platform serves thousands of users,
+				managing and trading their asset-backed cryptocurrencies.
+				Proof will soon introduce trustless crypto-fiat and the
+				Assurance Market Protocol (AMP) to facilitate investment
+				certainty among anonymous market participants.
+				The ICO begins October 8th.</div>
+
+			<div style="margin-top: 40px">
+				<button class="button" onclick="showNotifyPopup()">Notify Me!</button>
+			</div>
+		</div>
+
+		<div class="socials-container">
+			<a class="socials-icon" href="#" target="_blank">
+				<img src="./imgs/tweeter-icon.png" />
+			</a>
+			<a class="socials-icon" href="#" target="_blank">
+				<img src="./imgs/slack-icon.png" />
+			</a>
+			<a class="socials-link" href="#" target="_blank">
+				Bitcoin Talk
+			</a>
+			<a class="socials-link" href="https://tomoapp.com/" target="_blank">
+				<!-- <img src="./imgs/linkin-icon.png" /> -->
+				Tomo app
+			</a>
+		</div>
+	</div>
+
+	<div id="popupNotify" class="overlay" style="display: none" onclick="overlayClick(event)">
+		<div class="popup">
+			<button class="popup-close" onclick="closePopup('popupNotify')">
+				<img src="./imgs/close.svg" width="100%" />
+			</button>
+			<div class="popup-text">
+				Get updates leading up to the ICO
+			</div>
+			<div>
+				<input id="email" type="email" class="popup-input" placeholder="Enter your email" onkeypress="keyPressEmail(event)"/>
+				<div class="alert-error" style="display: none">
+					Email is invalid, Please try again.
+				</div>
+				<div class="alert-success" style="display: none">Thank you. You will receive email when have any update.</div>
+				<button id="submit" class="popup-btn popup-btn-get-notified" onclick="submitEmail()">Get notified</button>
+			</div>
+			<button class="popup-btn popup-btn-join-slack">Join the slack</button>
+		</div>
+	</div>
+</body>
+</html>
