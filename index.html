@@ -5,6 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Tomo Coin</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-site-verification" content="IQirjcMUZ9L5GjnRIsUB9QlDORMQxur9QqA-Ltm2b24" />
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/slideshow.css">
 	<link rel="stylesheet" href="./css/loading.css">
@@ -61,14 +62,14 @@
 			<img src="./imgs/t.png" class="logot"></img>
 		</div>
 		<div class="message">
-			<h2>ICO</h2>
+			<h2>Token sale</h2>
 			<h1>COMING SOON</h1>
-			<div class="message-text">The Proof platform serves thousands of users,
-				managing and trading their asset-backed cryptocurrencies.
-				Proof will soon introduce trustless crypto-fiat and the
-				Assurance Market Protocol (AMP) to facilitate investment
-				certainty among anonymous market participants.
-				The ICO begins October 8th.</div>
+			<div class="message-text">
+				Tomocoin is the cryptocurrency that powers the decentralized knowledge sharing platform Tomo.
+				Tomo network and Tomocoin is seamlessly merging a knowledge and social application useful for million of mainstream users with blockchain and cryptocurrency allowing for a secure,
+				decentralized and trustless store of value. We are seasoned engineers, researchers and crypto-economists who has built billion of dollar blockchain and we are pioneers of the new “Internet of Value” .
+				Join us to make a difference and build the future.
+			</div>
 
 			<div style="margin-top: 40px">
 				<button class="button" onclick="showNotifyPopup()">Notify Me!</button>
@@ -76,17 +77,16 @@
 		</div>
 
 		<div class="socials-container">
-			<a class="socials-icon" href="#" target="_blank">
-				<img src="./imgs/tweeter-icon.png" />
+			<a class="socials-icon" href="https://www.facebook.com/tomocoin" target="_blank">
+				<img src="./imgs/facebook-icon.png" />
 			</a>
-			<a class="socials-icon" href="#" target="_blank">
+			<a class="socials-icon" href="https://tomocoin.herokuapp.com/" target="_blank">
 				<img src="./imgs/slack-icon.png" />
 			</a>
-			<a class="socials-link" href="#" target="_blank">
+			<a class="socials-link" href="https://bitcointalk.org/index.php?topic=2021785.0" target="_blank">
 				Bitcoin Talk
 			</a>
 			<a class="socials-link" href="https://tomoapp.com/" target="_blank">
-				<!-- <img src="./imgs/linkin-icon.png" /> -->
 				Tomo app
 			</a>
 		</div>
@@ -98,18 +98,41 @@
 				<img src="./imgs/close.svg" width="100%" />
 			</button>
 			<div class="popup-text">
-				Get updates leading up to the ICO
+				Get updates leading up to the Token sale
 			</div>
 			<div>
 				<input id="email" type="email" class="popup-input" placeholder="Enter your email" onkeypress="keyPressEmail(event)"/>
 				<div class="alert-error" style="display: none">
 					Email is invalid, Please try again.
 				</div>
-				<div class="alert-success" style="display: none">Thank you. You will receive email when have any update.</div>
+				<div class="alert-success" style="display: none">Thank you. We will send email updates to your email address.</div>
 				<button id="submit" class="popup-btn popup-btn-get-notified" onclick="submitEmail()">Get notified</button>
 			</div>
-			<button class="popup-btn popup-btn-join-slack">Join the slack</button>
+			<a target="_blank" href="https://tomocoin.herokuapp.com/">
+				<button onclick="closePopup('popupNotify')" class="popup-btn popup-btn-join-slack">Join the slack</button>
+			</a>
 		</div>
 	</div>
+	<script type="text/javascript">
+    adroll_adv_id = "SNYYXEEOWBBXFIO2HEWYAF";
+    adroll_pix_id = "Q6OQ3PE7G5DXHNTV4NII6Q";
+    /* OPTIONAL: provide email to improve user identification */
+    /* adroll_email = "username@example.com"; */
+    (function () {
+        var _onload = function(){
+            if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
+            if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
+            var scr = document.createElement("script");
+            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+            scr.setAttribute('async', 'true');
+            scr.type = "text/javascript";
+            scr.src = host + "/j/roundtrip.js";
+            ((document.getElementsByTagName('head') || [null])[0] ||
+                document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+        };
+        if (window.addEventListener) {window.addEventListener('load', _onload, false);}
+        else {window.attachEvent('onload', _onload)}
+    }());
+</script>
 </body>
 </html>
