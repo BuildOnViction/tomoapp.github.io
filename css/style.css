@@ -26,7 +26,7 @@ h2 {
   max-width: 1000px;
   position: relative;
   min-height: 100vh;
-  padding: 50px 20px 20px 20px;
+  padding: 40px 20px 20px 20px;
   box-sizing: border-box;
 }
 
@@ -82,13 +82,15 @@ h2 {
 .message {
   margin-top: 100px;
   margin-bottom: 70px;
-  width: 60%
+  width: 70%;
 }
 
 .message-text {
   margin-top: 30px;
   line-height: 21px;
-  font-size: 18px;
+  font-size: 17px;
+   /* font-family: San Francisco, -apple-system, BlinkMacSystemFont, Helvetica, '.SFNSText-Regular', Arial, sans-serif; */
+  font-weight: 400;
 }
 
 .socials-container {
