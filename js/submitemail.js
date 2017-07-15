@@ -21,8 +21,8 @@ function submitEmail() {
   }
   else {
     $.ajax({
-      // url: 'https://api.tomoapp.vn/api/v1/subscribers/ico/create',
-      url: 'https://dev.tomoapp.me/api/v1/subscribers/ico/create',
+      url: 'https://api.tomoapp.vn/api/v1/subscribers/ico/create',
+      // url: 'https://dev.tomoapp.me/api/v1/subscribers/ico/create',
       type: "POST",
       data: {
         email: email
