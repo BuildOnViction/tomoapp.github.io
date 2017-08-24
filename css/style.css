@@ -80,7 +80,7 @@ h2 {
 
 
 .message {
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 70px;
   width: 70%;
 }
@@ -95,7 +95,7 @@ h2 {
 
 .socials-container {
   height: 50px;
-  position: absolute;
+  position: fixed;
   bottom: 10px;
   right: 50px;
   display: flex;
@@ -299,7 +299,8 @@ h2 {
   }
 
   .socials-container {
-    right: 0
+    right: 0;
+    position: relative;
   }
 }
 
