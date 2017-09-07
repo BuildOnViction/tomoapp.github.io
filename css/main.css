@@ -762,15 +762,17 @@ footer {
   border: 2px solid #50E3C2;
 }
 
+
 #vision .slick-list {
   padding-bottom: 40px !important;
   padding-top: 40px !important;
 }
 
 .vision-slider {
-  height: 360px;
+  height: 400px;
   max-width: 1200px;
   margin: auto;
+  overflow: hidden;
 }
 
 .vision-card {
