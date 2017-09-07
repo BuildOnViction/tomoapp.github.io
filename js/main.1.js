@@ -88,8 +88,7 @@ $(document).ready(function () {
   //------------------------------------//
   $(".scroll").click(function (event) {
     event.preventDefault();
-    $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 800);
-
+    $('html,body').animate({ scrollTop: $(this.hash).offset().top - 50 }, 800);
   });
 
   $('.videos-slider').slick({
@@ -101,8 +100,8 @@ $(document).ready(function () {
     dots: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    autoplay: false,
+    autoplaySpeed: 3000,
     centerMode: true,
     slidesToShow: 3,
     variableWidth: true,

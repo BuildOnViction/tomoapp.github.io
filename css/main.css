@@ -353,11 +353,12 @@ a:hover, a:focus {
 }
 
 .navbar-inverse .navbar-nav > li > a, .navbar-nav a {
-    color: #ffffff;
-    font-size: 10px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-right: 35px;
+  color: #ffffff;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-left: 25px;
+  padding: 10px;
 }
 
 .navbar-nav a:hover {
@@ -365,15 +366,10 @@ a:hover, a:focus {
   opacity: 0.6;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover {
-    color: #ffffff;
-    opacity: 0.6;
-}
-
 .nav > li > a {
-    position: relative;
-    display: block;
-    padding: 10px 10px;
+  position: relative;
+  display: block;
+  padding: 10px 10px;
 }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
@@ -601,7 +597,7 @@ footer {
   width: 60px;
   height: 60px;
   position: relative;
-  display: block;
+  display: inline-block;
 }
 
 @keyframes logo1 {
@@ -766,6 +762,11 @@ footer {
   border: 2px solid #50E3C2;
 }
 
+#vision .slick-list {
+  padding-bottom: 40px !important;
+  padding-top: 40px !important;
+}
+
 .vision-slider {
   height: 360px;
   max-width: 1200px;
@@ -819,6 +820,7 @@ footer {
   background: #333333;
   color: #fff;
   transform: scale(1, 1);
+  box-shadow:  0 5px 30px rgba(0, 0, 0, 0.5)
 }
 
 .slick-center .vision-card hr{
