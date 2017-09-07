@@ -111,6 +111,7 @@ $(document).ready(function () {
       {
         breakpoint: 768,
         settings: {
+          autoplay: false,
           slidesToShow: 1,
           dots: true,
         }
