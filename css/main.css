@@ -328,7 +328,7 @@ a:hover, a:focus {
 
 .navbar {
     border: 0px solid rgba(0, 0, 0, 0);
-    background: #3333;
+    background: #333;
     margin: auto;
     min-height: 60px;
     padding: 8px 20px 0 20px;
@@ -1028,6 +1028,10 @@ padding-left:90px;
   .timeline > li > .timeline-panel:before {
     display: none;
   }
+}
+
+.slick-dots {
+  margin: 30px 0;
 }
 
 #about .slick-dots {
