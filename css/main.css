@@ -707,8 +707,21 @@ footer {
 }
 
 #team .team-member .team-member-info > .title {
-  margin-bottom: 15px;
   font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#team .team-member .team-member-info > .profile {
+  margin-bottom: 20px;
+}
+
+#team .team-member .team-member-info > .profile > a {
+  margin: 5px 10px;
+  opacity: 0.7;
+}
+
+#team .team-member .team-member-info > .profile > a:hover {
+  opacity: 1;
 }
 
 #team .team-member > img {
@@ -849,6 +862,17 @@ footer {
   .appstore {
     height: 30px;
   }
+}
+
+.language {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-left: 50px;
+  padding: 10px;
 }
 
 .timeline {

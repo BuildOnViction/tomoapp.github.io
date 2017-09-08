@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Landing" transform="translate(-1109.000000, -61.000000)" stroke="#FFFFFF">
+            <g id="Page-1" transform="translate(1110.000000, 62.000000)">
+                <path d="M20,10 C20,15.5233333 15.5216667,20 10,20 C4.47583333,20 0,15.5233333 0,10 C0,4.47833333 4.47583333,0 10,0 C15.5216667,0 20,4.47833333 20,10 Z" id="Stroke-1"></path>
+                <path d="M7.73416667,20 C6.05583333,17.655 5,14.23 5,10.4175 C5,6.6025 6.05666667,3.17833333 7.73666667,0.833333333" id="Stroke-3"></path>
+                <path d="M11.6691667,0.833333333 C13.3475,3.17833333 14.4033333,6.6025 14.4033333,10.4158333 C14.4033333,14.23 13.3466667,17.655 11.6666667,20" id="Stroke-5"></path>
+                <path d="M0.833333333,6.66666667 L19.015,6.66666667" id="Stroke-7"></path>
+                <path d="M0.833333333,14.1666667 L19.015,14.1666667" id="Stroke-9"></path>
+            </g>
+        </g>
+    </g>
+</svg>
