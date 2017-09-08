@@ -100,8 +100,6 @@ $(document).ready(function () {
     dots: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 3000,
     centerMode: true,
     slidesToShow: 3,
     variableWidth: true,
@@ -110,7 +108,6 @@ $(document).ready(function () {
       {
         breakpoint: 768,
         settings: {
-          autoplay: false,
           slidesToShow: 1,
           dots: true,
         }
