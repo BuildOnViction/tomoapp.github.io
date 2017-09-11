@@ -401,6 +401,7 @@ a:hover, a:focus {
    ========================================================================== */
 header {
   background: url(../img/header-bg.png) no-repeat center center;
+  background-color: #333;
   width: 100%;
   padding: 40px 10px 60px 10px;
   height: calc(100vh - 80px);
