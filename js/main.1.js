@@ -96,12 +96,13 @@ $(document).ready(function () {
     dots: true
   });
   $('.vision-slider').slick({
+    infinite: false,
+    initialSlide: 1,
     arrows: false,
     dots: false,
     slidesToShow: 2,
     slidesToScroll: 1,
     centerMode: true,
-    slidesToShow: 3,
     variableWidth: true,
     focusOnSelect: true,
     responsive: [
@@ -116,6 +117,8 @@ $(document).ready(function () {
   });
 
   $('.testimonial-for').slick({
+    infinite: false,
+    initialSlide: 1,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
@@ -136,6 +139,8 @@ $(document).ready(function () {
 
   $('.testimonial-nav').slick({
     asNavFor: '.testimonial-for',
+    initialSlide: 1,
+    infinite: false,
     slidesToShow: 2,
     slidesToScroll: 1,
     dots: false,

@@ -796,66 +796,65 @@ footer {
   padding-top: 40px !important;
 }
 
-.vision-slider {
+#vision .vision-slider {
   height: 400px;
   max-width: 1200px;
   margin: auto;
   overflow: hidden;
 }
 
-.vision-card {
+#vision .vision-card {
   height: 315px;
   width: 400px;
   max-width: 100%;
-  background: red;
-  transition: 0.5s all;
   background: #E4E4E4;
   color: #333;
-  transform: scale(0.8, 0.8);
   border-radius: 20px;
   padding: 30px;
+  transform: scale(0.8);
+  transition: 0.5s all;
   cursor: pointer;
 }
 
-.vision-card h3 {
+#vision .vision-card h3 {
   margin-top: 0;
 }
 
-.vision-card hr {
+#vision .vision-card hr {
   width: 60px;
   border-width: 5px;
   margin-left: 0;
   border-color: #333;
 }
 
+#vision .slick-current.slick-center.vision-card{
+  margin-top: 0;
+  background: #333333;
+  color: #fff;
+  transform: scale(1);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5)
+}
+
+#vision .slick-current.slick-center.vision-card hr{
+  border-color: #fff;
+}
+
 @media(max-width: 767px) {
-  .vision-card {
+  #vision .vision-card {
     width: 300px;
     padding: 15px;
     border-radius: 15px;
   }
 
-  .vision-card h3 {
+  #vision .vision-card h3 {
     font-size: 16px;
   }
 
-  .vision-card hr {
+  #vision .vision-card hr {
     border-width: 4px;
   }
 }
 
-
-.slick-center .vision-card{
-  margin-top: 0;
-  background: #333333;
-  color: #fff;
-  transform: scale(1, 1);
-  box-shadow:  0 5px 30px rgba(0, 0, 0, 0.5)
-}
-
-.slick-center .vision-card hr{
-  border-color: #fff;
-}
 
 .alert-error-valid {
   color: red;
@@ -909,7 +908,7 @@ footer {
   cursor: pointer;
 }
 
-#testimonial .slick-center .nav-item {
+#testimonial .slick-current.slick-center.nav-item {
   transform: scale(1);
   opacity: 1;
 }
@@ -951,17 +950,9 @@ footer {
     transition: 0.5s all;
   }
 
-  #testimonial .slick-center .nav-item {
-    transform: scale(1);
-    opacity: 1;
-  }
-
   #testimonial .nav-item > img {
     width: 100px;
     height: 100px;
-    margin: auto;
-    border-radius: 50%;
-    border: 1px solid #e0e0e0;
   }
 
   #testimonial .nav-item > .name {
