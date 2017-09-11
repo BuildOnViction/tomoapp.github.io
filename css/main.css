@@ -66,11 +66,25 @@ h4 {
   }
 }
 
+.tagline {
+  font-size: 45px;
+}
 .lead {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 26px;
   font-weight: 400;
 }
+
+@media(max-width: 767px) {
+  .tagline {
+    font-size: 30px;
+  }
+
+  .lead {
+    font-size: 18px;
+  }
+}
+
 
 p {
   font-size: 17px;
@@ -598,6 +612,7 @@ footer {
   height: 60px;
   position: relative;
   display: inline-block;
+  text-align: left;
 }
 
 @keyframes logo1 {
@@ -873,6 +888,90 @@ footer {
   text-transform: uppercase;
   margin-left: 50px;
   padding: 10px;
+}
+
+#testimonial .testimonial-text {
+  padding: 50px 70px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  width: 640px;
+  max-width: 100%;
+  border-radius: 100px;
+  display: inline-block;
+  margin: 50px 30px;
+}
+
+#testimonial .nav-item {
+  width: 220px;
+  text-align: center;
+  transform: scale(0.5);
+  opacity: 0.7;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+#testimonial .slick-center .nav-item {
+  transform: scale(1);
+  opacity: 1;
+}
+
+#testimonial .nav-item > img {
+  width: 140px;
+  height: 140px;
+  margin: auto;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+}
+
+#testimonial .nav-item > .name {
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+#testimonial .nav-item > .title {
+  font-size: 16px;
+}
+
+@media(max-width: 767px) {
+  #testimonial .testimonial-text {
+    padding: 20px 25px;
+    width: 640px;
+    max-width: 100%;
+    box-shadow: none;
+    border-radius: 30px;
+    border: 1px solid #dedede;
+    margin: 40px 5px 30px 5px;
+    min-height: 170px;
+  }
+
+  #testimonial .nav-item {
+    width: 150px;
+    text-align: center;
+    transform: scale(0.5);
+    opacity: 0.7;
+    transition: 0.5s all;
+  }
+
+  #testimonial .slick-center .nav-item {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  #testimonial .nav-item > img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid #e0e0e0;
+  }
+
+  #testimonial .nav-item > .name {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  #testimonial .nav-item > .title {
+    font-size: 14px;
+  }
 }
 
 .timeline {

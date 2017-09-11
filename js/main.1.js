@@ -98,7 +98,7 @@ $(document).ready(function () {
   $('.vision-slider').slick({
     arrows: false,
     dots: false,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     centerMode: true,
     slidesToShow: 3,
@@ -113,6 +113,36 @@ $(document).ready(function () {
         }
       }
     ]
+  });
+
+  $('.testimonial-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    dots: false,
+    asNavFor: '.testimonial-nav',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+          fade: false
+        }
+      }
+    ]
+  });
+
+  $('.testimonial-nav').slick({
+    asNavFor: '.testimonial-for',
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    centerMode: true,
+    focusOnSelect: true,
+    variableWidth: true
   });
 
   //------------------------------------//
