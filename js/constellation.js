@@ -42,7 +42,7 @@ $(document).ready(function(){
 				},
 				line: {
 					color: 'rgba(255, 255, 255, .5)',
-					width: 0.2
+					width: 0.1
 				},
 				position: {
 					x: 0, // This value will be overwritten at startup
