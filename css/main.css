@@ -608,6 +608,26 @@ footer {
 
 }
 
+.overlay {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation-name: overlay;
+  animation-duration: 0.5s;
+}
+
+.global_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .logo {
   width: 60px;
   height: 60px;
