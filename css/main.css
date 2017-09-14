@@ -876,6 +876,17 @@ footer {
   }
 }
 
+#vision .vision-card a {
+  font-style: italic;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#vision .vision-card a:hover {
+  opacity: 1;
+  color: #fff;
+}
+
 
 .alert-error-valid {
   color: red;
