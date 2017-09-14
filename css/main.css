@@ -825,13 +825,13 @@ footer {
 }
 
 #vision .vision-card {
-  height: 315px;
+  height: 320px;
   width: 400px;
   max-width: 100%;
   background: #E4E4E4;
   color: #333;
   border-radius: 20px;
-  padding: 30px;
+  padding: 25px 30px;
   transform: scale(0.8);
   transition: 0.5s all;
   cursor: pointer;
