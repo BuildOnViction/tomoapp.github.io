@@ -488,6 +488,10 @@ header {
 	padding: 30px 0px;
 }
 
+.pad-xxs {
+	padding: 10px 0px;
+}
+
 .pad-0 {
   padding: 0;
 }
@@ -564,7 +568,7 @@ footer {
   margin-top: 50px;
   color: #fff;
   line-height: 30px;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Lato', sans-serif;
 }
 
@@ -692,13 +696,13 @@ footer {
 }
 
 .media-articles a {
-  opacity: 0.7;
+  filter: grayscale(100%);
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .media-articles a:hover{
-  opacity: 1;
+  filter: grayscale(0%);
 }
 
 .media-articles img {
@@ -798,17 +802,18 @@ footer {
 }
 
 #mailing-list .email-input {
+  color: #333;
   border-radius: 40px;
   height: 41px;
   padding: 2px 50px;
-  border: 2px solid #9B9B9B;
+  border: 1px solid #fff;
   width: 100%;
   outline: none;
   font-size: 16px;
 }
 
 #mailing-list .email-input:focus {
-  border: 2px solid #50E3C2;
+  border: 1px solid #50E3C2;
 }
 
 
@@ -825,7 +830,7 @@ footer {
 }
 
 #vision .vision-card {
-  height: 320px;
+  height: 330px;
   width: 400px;
   max-width: 100%;
   background: #E4E4E4;
@@ -869,6 +874,12 @@ footer {
 
   #vision .vision-card h3 {
     font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  #vision .vision-card h4 {
+    font-size: 14px;
+    margin-top: 0px;
   }
 
   #vision .vision-card hr {
@@ -890,14 +901,23 @@ footer {
 
 .alert-error-valid {
   color: red;
+  background: white;
+  margin-top: 5px;
+  padding: 5px;
 }
 .alert-error {
   color: red;
+  background: white;
+  margin-top: 5px;
+  padding: 5px;
 }
 
 .alert-success {
   font-size: 18px;
-  padding: 10px 20px;
+  padding: 20px;
+  color: green;
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
 }
 
 .appstore {

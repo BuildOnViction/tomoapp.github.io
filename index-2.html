@@ -126,10 +126,29 @@
           <h1 class="tagline">The Digital Ecosystem for Internet of Value</h1>
           <br />
           <br />
-          <p class="lead fadeIn">Tomocoin Token Sale Comming Soon</p>
+          <p class="lead fadeIn">Subscribe to our email list to receive news and updates.</p>
           <br />
           <br />
-          <div class="row">
+          <div id="mailing-list">
+            <div class="row">
+              <div class="col-sm-4 col-sm-offset-3 margin-10">
+                <input id="email" type="email" class="email-input m-text-center" placeholder="Enter your email" onkeypress="keyPressEmail(event)"/>
+                <div class="alert-error-valid text-center" style="display: none">Email is invalid, Please try again.</div>
+                <div class="alert-error text-center" style="display:none"><span>Error, Please try again or use this <a target="_blank" href="https://goo.gl/forms/L3aSO5Xw1mVwt9Xr2">link</a></span></div>
+              </div>
+              <div class="col-sm-2 m-text-center margin-10">
+                <button id="submit" class="btn btn-primary" style="width: 100%; min-width: inherit;" onclick="submitEmail()">
+                  Submit
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <div class="alert-success text-center" style="display: none">Thank you. We will send email updates to your email address.</div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="row">
             <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
               <div class="row">
                 <div class="col-xs-6 text-right fadeInUp">
@@ -138,9 +157,9 @@
                 <div class="col-xs-6 text-left fadeInUp">
                   <a href="https://tomoapp.com/" target="_blank" class="btn btn-primary">TOMOAPP</a>
                 </div>
-              </div><!--End Button Row-->
+              </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -149,17 +168,17 @@
   <div class="media-articles">
     <div class="container">
       <div>
-        <a href="#">
-          <img src="/img/forbes-logo.png" />
+        <a href="https://techcrunch.com/2017/09/12/kik-ico/" target="_blank">
+          <img src="/img/TechCrunch_Logo_2013.png" />
         </a>
-        <a href="#">
-          <img src="/img/thenextweb-logo.png" />
+        <a href="https://thenextweb.com/contributors/2017/08/21/blockchain-can-make-social-networks-private-profitable/#.tnw_ASnqGiyC" target="_blank">
+          <img src="/img/tnw.png" />
         </a>
-        <a href="#">
-          <img src="/img/the-merkle-logo.png" />
+        <a href="https://hackernoon.com/a-vision-of-the-internet-of-value-ad187abf5826" target="_blank">
+          <img src="/img/hackernoon.png" />
         </a>
-        <a href="#">
-          <img src="/img/live-bitcoin-news-logo.png" />
+        <a href="https://news.21.co/thoughts-on-tokens-436109aabcbe" target="_blank">
+          <img src="/img/new21.png" />
         </a>
       </div>
     </div>
@@ -751,21 +770,25 @@
       <div class="row text-center margin-40">
         <div class="col-xs-3 col-sm-2 col-sm-offset-2">
           <a href="#"><img src="/img/slack-icon.png" height="50px" /></a>
+          <div class="pad-xxs">Chat with the team in real time</div>
         </div>
         <div class="col-xs-3 col-sm-2">
           <a href="#"><img src="/img/twitter-icon.png" height="50px" /></a>
+          <div class="pad-xxs">Receive breaking news</div>
         </div>
         <div class="col-xs-3 col-sm-2">
           <a href="#"><img src="/img/facebook-icon.png" height="50px" /></a>
+          <div class="pad-xxs">Official update</div>
         </div>
         <div class="col-xs-3 col-sm-2">
           <a href="#"><img src="/img/medium-icon.png" height="50px" /></a>
+          <div class="pad-xxs">Official tomo blog</div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="mailing-list" class="pad-sm">
+  <!-- <section id="mailing-list" class="pad-sm">
     <div class="container">
       <h2 class="uppercase text-center margin-30">Mailing List</h2>
       <div class="text-center margin-30" style="font-size: 24px;">Subscribe to our email list to receive news and updates</div>
@@ -787,7 +810,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <footer class="footer">
     <div class="container">
@@ -799,14 +822,14 @@
         </a>
       </div>
       <div class="col-sm-4 text-center margin-60">
-        <div style="font-size: 24px;" class="margin-20"><strong>Tomoapp Vietnam</strong></div>
+        <div style="font-size: 22px;" class="margin-20"><strong>Tomoapp Vietnam</strong></div>
         <div>
           Lot 11 Constrexim Yen Hoa,<br/>
           Cau Giay, Hanoi, Vietnam
         </div>
       </div>
       <div class="col-sm-4 text-center">
-        <div style="font-size: 24px;" class="margin-20"><strong>Tomochain Pte. Ltd.</strong></div>
+        <div style="font-size: 22px;" class="margin-20"><strong>Tomochain Pte. Ltd.</strong></div>
         <div>
           Singapore Headquarters<br/>
           10 Anson Road<br/>
