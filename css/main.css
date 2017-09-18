@@ -898,6 +898,10 @@ footer {
   color: #fff;
 }
 
+#vision .slick-dots {
+  margin: 20px 0;
+}
+
 
 .alert-error-valid {
   color: red;

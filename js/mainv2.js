@@ -99,7 +99,7 @@ $(document).ready(function () {
     infinite: false,
     initialSlide: 1,
     arrows: false,
-    dots: false,
+    dots: true,
     slidesToShow: 2,
     slidesToScroll: 1,
     centerMode: true,
