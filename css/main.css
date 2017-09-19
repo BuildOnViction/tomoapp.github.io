@@ -405,7 +405,7 @@ header {
   width: 100%;
   padding: 40px 10px 60px 10px;
   height: calc(100vh - 80px);
-  min-height: 500px;
+  min-height: 570px;
   overflow: hidden;
   background-size: cover;
   position: relative;
@@ -1208,6 +1208,13 @@ padding-left:90px;
   width: 90px;
   right: 0;
   bottom: -50px;
+}
+
+@media(max-width: 767px) {
+  #about .slick-dots {
+    right: 50%;
+    transform: translateX(50%);
+  }
 }
 
 .slick-slide {
