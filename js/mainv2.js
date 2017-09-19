@@ -92,7 +92,7 @@ $(document).ready(function () {
   });
 
   $('.videos-slider').slick({
-    arrows: true,
+    arrows: false,
     dots: true
   });
 

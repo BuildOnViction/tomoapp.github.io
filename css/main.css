@@ -1205,8 +1205,9 @@ padding-left:90px;
 }
 
 #about .slick-dots {
-  width: 150px;
+  width: 90px;
   right: 0;
+  bottom: -50px;
 }
 
 .slick-slide {
