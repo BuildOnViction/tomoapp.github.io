@@ -833,9 +833,9 @@ footer {
   height: 330px;
   width: 400px;
   max-width: 100%;
-  background: #E4E4E4;
-  color: #333;
-  border-radius: 20px;
+  background: #2E3951;
+  color: #fff;
+  /* border-radius: 20px; */
   padding: 25px 30px;
   transform: scale(0.8);
   transition: 0.5s all;
@@ -850,26 +850,26 @@ footer {
   width: 60px;
   border-width: 5px;
   margin-left: 0;
-  border-color: #333;
+  border-color: #fff;
 }
 
 #vision .slick-current.slick-center.vision-card{
   margin-top: 0;
-  background: #333333;
-  color: #fff;
+  background: #A0CBBC;
+  color: #333;
   transform: scale(1);
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5)
+  box-shadow: 0 5px 30px #9BCFC1
 }
 
 #vision .slick-current.slick-center.vision-card hr{
-  border-color: #fff;
+  border-color: #0DB688;
 }
 
 @media(max-width: 767px) {
   #vision .vision-card {
     width: 300px;
     padding: 15px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
   }
 
   #vision .vision-card h3 {

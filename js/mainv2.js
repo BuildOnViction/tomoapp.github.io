@@ -95,6 +95,7 @@ $(document).ready(function () {
     arrows: true,
     dots: true
   });
+
   $('.vision-slider').slick({
     infinite: false,
     initialSlide: 1,
