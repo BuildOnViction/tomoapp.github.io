@@ -143,9 +143,6 @@ a {
 a:hover, a:focus {
   text-decoration: none;
   color: #231f20;
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
 
@@ -155,19 +152,8 @@ a:hover, a:focus {
   vertical-align: -10%;
 }
 
-::selection {
-	background: #231f20; /* Safari */
-	color: #FFFFFF;
-}
-::-moz-selection {
-	background: #231f20; /* Firefox */
-	color: #FFFFFF;
-}
-
-
 /*------------------Buttons---------------------*/
 .btn:focus {
-  outline: 0px auto -webkit-focus-ring-color;
   outline: none;
 }
 
@@ -217,9 +203,6 @@ a:hover, a:focus {
   background-color: rgba(80, 227, 194, 0.3) !important;
   border: 2px solid #50E3C2 !important;
   color: #ffffff;
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
 
@@ -236,9 +219,6 @@ a:hover, a:focus {
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active {
   background-color: rgba(255, 255, 255, 0.3);
   color: #fff;
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
 
@@ -256,9 +236,6 @@ a:hover, a:focus {
   background-color: rgba(0, 0, 0, 0.1);
   border: 2px solid #333;
   color: #333;
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
 
@@ -400,7 +377,7 @@ a:hover, a:focus {
    Main styles
    ========================================================================== */
 header {
-  background: url(../img/header-bg.png) no-repeat center center;
+  background: url(../img/header-bg.jpg) no-repeat center center;
   background-color: #333;
   width: 100%;
   padding: 40px 10px 60px 10px;
@@ -409,9 +386,7 @@ header {
   overflow: hidden;
   background-size: cover;
   position: relative;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-size: cover;
 }
 
 .header-info {
@@ -543,9 +518,6 @@ hr.line {
   width: 60px;
   height: 60px;
   border: 2px solid #4ec3cd;
-  -moz-border-radius: 30px;
-  -o-border-radius: 30px;
-  -webkit-border-radius: 30px;
   border-radius: 30px;
   margin: auto;
 }
@@ -562,7 +534,7 @@ hr.line {
 }
 
 footer {
-  background-image: url(/img/footer-img.png);
+  background-image: url(/img/footer-img.jpg);
   background-size: cover;
   padding: 40px 0px;
   margin-top: 50px;
