@@ -41,44 +41,44 @@
           <img src="./imgs/t.png" class="logot"></img>
         </a>
       </div>
-      <!-- <div class="dropdown visible-xs" style="position: absolute; top: 10px; right: 70px;">
+      <div class="dropdown visible-xs" style="position: absolute; top: 10px; right: 70px;">
         <button class="language dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
           <img src="/img/lang.svg" style="margin-right: 5px;"/> ENG
-          <span class="caret"></span>
+          <!-- <span class="caret"></span> -->
         </button>
-        <ul class="dropdown-menu" style="right: 0;" aria-labelledby="dropdownMenu1">
+        <!-- <ul class="dropdown-menu" style="right: 0;" aria-labelledby="dropdownMenu1">
           <li><a href="#" style="margin-left: 0">RU</a></li>
           <li><a href="#" style="margin-left: 0">VI</a></li>
           <li><a href="#" style="margin-left: 0">CN</a></li>
-        </ul>
-      </div> -->
+        </ul> -->
+      </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right visible-xs">
-          <li><a href="#about" class="scroll" data-toggle="collapse" data-target=".navbar-collapse">Tomocoin</a></li>
+          <li><a href="#about" class="scroll" data-toggle="collapse" data-target=".navbar-collapse">Introduction</a></li>
           <li><a href="#application" class="scroll" data-toggle="collapse" data-target=".navbar-collapse">Application</a></li>
           <li><a href="#roadmap" class="scroll" data-toggle="collapse" data-target=".navbar-collapse">Roadmap</a></li>
           <!-- <li><a href="#collaborator" class="scroll" data-toggle="collapse" data-target=".navbar-collapse">Partners</a></li> -->
           <li><a href="#team" class="scroll" data-toggle="collapse" data-target=".navbar-collapse">Team</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right hidden-xs">
-          <li><a href="#about" class="scroll">Tomocoin</a></li>
+          <li><a href="#about" class="scroll">Introduction</a></li>
           <li><a href="#application" class="scroll">Application</a></li>
           <li><a href="#roadmap" class="scroll">Roadmap</a></li>
           <!-- <li><a href="#collaborator" class="scroll">Partners</a></li> -->
           <li><a href="#team" class="scroll">Team</a></li>
-          <!-- <li>
+          <li>
             <div class="dropdown" style="display: inline-block;">
               <button class="language dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 <img src="/img/lang.svg" style="margin-right: 5px;"/> ENG
-                <span class="caret"></span>
+                <!-- <span class="caret"></span> -->
               </button>
-              <ul class="dropdown-menu" style="right: 0;" aria-labelledby="dropdownMenu1">
+              <!-- <ul class="dropdown-menu" style="right: 0;" aria-labelledby="dropdownMenu1">
                 <li><a href="#" style="margin-left: 0">RU</a></li>
                 <li><a href="#" style="margin-left: 0">VI</a></li>
                 <li><a href="#" style="margin-left: 0">CN</a></li>
-              </ul>
+              </ul> -->
             </div>
-          </li> -->
+          </li>
         </ul>
       </div>
 
@@ -97,23 +97,23 @@
           </a>
         </div>
         <div class="col-xs-11 signin text-right navbar-nav">
-          <a href="#about" class="scroll">Tomocoin</a>
+          <a href="#about" class="scroll">Introduction</a>
           <a href="#application" class="scroll">Application</a>
           <a href="#roadmap" class="scroll">Roadmap</a>
           <!-- <a href="#collaborator" class="scroll">Partners</a> -->
           <a href="#team" class="scroll">Team</a>
 
-          <!-- <div class="dropdown" style="display: inline-block;">
+          <div class="dropdown" style="display: inline-block;">
             <button class="language dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
               <img src="/img/lang.svg" style="margin-right: 5px;"/> ENG
-              <span class="caret"></span>
+              <!-- <span class="caret"></span> -->
             </button>
-            <ul class="dropdown-menu" style="right: 0;" aria-labelledby="dropdownMenu1">
+            <!-- <ul class="dropdown-menu" style="right: 0;" aria-labelledby="dropdownMenu1">
               <li><a href="#" style="margin-left: 0">RU</a></li>
               <li><a href="#" style="margin-left: 0">VI</a></li>
               <li><a href="#" style="margin-left: 0">CN</a></li>
-            </ul>
-          </div> -->
+            </ul> -->
+          </div>
         </div>
       </div>
 
@@ -125,9 +125,9 @@
           <p class="lead fadeIn">Subscribe to receive updates about the upcoming token sales</p>
           <br />
           <br />
-          <div id="mailing-list">
+          <div id="mailing-list" class="container">
             <div class="row">
-              <div class="col-sm-4 col-sm-offset-3 margin-10">
+              <div class="col-sm-6 col-sm-offset-2 margin-10">
                 <input id="email" type="email" class="email-input m-text-center" placeholder="Enter your email" onkeypress="keyPressEmail(event)"/>
                 <div class="alert-error-valid text-center" style="display: none">Email is invalid, Please try again.</div>
                 <div class="alert-error text-center" style="display:none"><span>Error, Please try again or use this <a target="_blank" href="https://goo.gl/forms/L3aSO5Xw1mVwt9Xr2">link</a></span></div>
@@ -140,7 +140,15 @@
             </div>
             <div class="row">
               <div class="col-sm-8 col-sm-offset-2">
-                <div class="alert-success text-center" style="display: none">Thank you. We will send email updates to your email address.</div>
+                <div class="alert-success text-center" style="display: none">
+                  <div class="margin-10">Thank you. We will send email updates to your email address.</div>
+                  <div style="color: #333">
+                    <a href="https://tomocoin.herokuapp.com" target="_blank">
+                      <img src="/img/slack-icon.png" height="20px" />
+                      &nbsp;Join the slack
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -148,7 +156,7 @@
             <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
               <div class="row">
                 <div class="col-xs-6 text-right fadeInUp">
-                  <a href="https://goo.gl/bfTeUB" target="_blank" class="btn btn-outline btn-secondary">WHITE PAPER</a>
+                  <a href="https://goo.gl/RiNRhb" target="_blank" class="btn btn-outline btn-secondary">WHITE PAPER</a>
                 </div>
                 <div class="col-xs-6 text-left fadeInUp">
                   <a href="https://tomoapp.com/" target="_blank" class="btn btn-primary">TOMOAPP</a>
@@ -198,16 +206,16 @@
               payment and a secure, decentralized, and trustless store of value.
           </div>
           <div>
-            <a href="https://goo.gl/bfTeUB" target="_blank"  class="btn btn-default">White paper</a>
+            <a href="https://goo.gl/RiNRhb" target="_blank"  class="btn btn-default">White paper</a>
           </div>
         </div>
         <div class="col-sm-6 fadeIn" style="padding-top: 20px;">
           <div class="videos-slider">
             <div>
-              <iframe width="100%" height="270px" src="https://www.youtube.com/embed/okTcuq9VsAA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              <iframe width="100%" height="250px" src="https://www.youtube.com/embed/okTcuq9VsAA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
             </div>
             <div>
-              <iframe width="100%" height="270px" src="https://www.youtube.com/embed/CaVHM7ZoYlI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              <iframe width="100%" height="250px" src="https://www.youtube.com/embed/CaVHM7ZoYlI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -217,8 +225,8 @@
 
   <section id="vision" class="pad-sm">
     <div class="container">
-      <h2 class="text-center text-uppercase">Our vision</h2>
-      <hr style="width: 290px;" class="margin-60" />
+      <h2 class="text-center text-uppercase margin-60">Our vision</h2>
+      <!-- <hr style="width: 290px;" class="margin-60" /> -->
       <div class="row">
         <div class="text-center margin-30 col-sm-offset-1 col-sm-10" style="font-size: 16px;">
           Our mission is to be a leading force in building the Internet of Value, designing its
@@ -306,8 +314,8 @@
     </div>
   </section>
 
-  <h2 id="application" class="text-uppercase text-center" style="padding-top: 60px">Application</h2>
-  <hr style="width: 290px;" class="margin-50" />
+  <h2 id="application" class="text-uppercase text-center margin-50" style="padding-top: 60px">Application</h2>
+  <!-- <hr style="width: 290px;" class="margin-50" /> -->
 
   <section id="tomoapp" class="pad-sm">
     <div class="container">
@@ -316,7 +324,7 @@
           <img src="/img/tomoapp-demo.png" width="100%" style="margin-top: 30px;" />
         </div>
         <div class="col-sm-6 fadeIn">
-          <h2 class="uppercase d-text-right m-text-center">Tomoapp</h2>
+          <h3 class="uppercase d-text-right m-text-center">Tomoapp</h3>
           <h3 class="d-text-right m-text-center">​Tomo​ ​video​ ​social​ ​sharing​ ​application</h3>
           <div class="margin-30 text-justify">
             This Tomo application will be the flagship consumer application within the Tomo
@@ -327,6 +335,9 @@
           </div>
           <div class="margin-20">
             <div class="m-text-center d-text-right">
+              <a href="https://tomoapp.com/" target="_blank" style="padding: 0 5px;" class="webapp">
+                <img src="/img/webapp.png" class="appstore" height="40px" />
+              </a>
               <a href="https://itunes.apple.com/us/app/tomo/id1228483510?ls=1&mt=8" target="_blank" style="padding: 0 5px;">
                 <img src="/img/appstore.png" class="appstore" height="40px" />
               </a>
@@ -422,7 +433,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6 fadeIn">
-          <h2 class="uppercase m-text-center">Wallet</h2>
+          <h3 class="uppercase m-text-center">Wallet</h3>
           <div class="margin-30 text-justify">
             In our opinion, a secure and user-friendly coin wallet that gives financial control back to
             the end-users is one of the most important parts of the infrastructure of the “Internet of
@@ -485,7 +496,7 @@
           <img src="/img/debit-demo.png" width="100%" style="margin-top: 30px" />
         </div>
         <div class="col-sm-6 fadeIn">
-          <h2 class="uppercase d-text-right m-text-center">Debit Card</h2>
+          <h3 class="uppercase d-text-right m-text-center">Debit Card</h3>
           <div class="margin-30 text-justify">
             Connect your Tomo account wallet to your Tomo debit card to spend your
             Social coins as fiat currency anywhere in the world.
@@ -506,8 +517,8 @@
 
   <section id="roadmap" class="pad-sm">
     <div class="container">
-      <h2 class="uppercase text-center">Roadmap</h2>
-      <hr style="width: 290px;" class="margin-90" />
+      <h2 class="uppercase text-center margin-90">Roadmap</h2>
+      <!-- <hr style="width: 290px;" class="margin-90" /> -->
       <ul class="timeline">
         <li>
           <div class="timeline-badge"></div>
@@ -704,10 +715,10 @@
             <div class="name">Long Vuong</div>
             <div class="title">CEO & Founder</div>
             <div class="profile">
-              <a href="#">
+              <a href="https://twitter.com/longvuong22" target="_blank">
                 <img src="/img/t.png" height="15px" />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/longvuong22" target="_blank">
                 <img src="/img/in.png" height="15px" />
               </a>
             </div>
@@ -718,33 +729,33 @@
         </div>
 
         <div class="col-sm-4 team-member">
-          <img src="/img/team/11.jpg" width="100%" />
-          <div class="team-member-info">
-            <div class="name">Tung Hoang</div>
-            <div class="title">PM & Co-founder</div>
-            <div class="profile">
-              <a href="#">
-                <img src="/img/in.png" height="15px" />
-              </a>
-            </div>
-            <div>
-                Product manager, frontend engineer, open-source developer.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4 team-member">
           <img src="/img/team/2.jpg" width="100%" />
           <div class="team-member-info">
             <div class="name">Son Nguyen</div>
             <div class="title">CTO</div>
             <div class="profile">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/thanhson1085" target="_blank">
                 <img src="/img/in.png" height="15px" />
               </a>
             </div>
             <div>
                 Director of Engineering, Director of Engineering of Tomo app. Experienced technical leader responsible for a dozen of scalable social applications.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 team-member">
+          <img src="/img/team/11.jpg" width="100%" />
+          <div class="team-member-info">
+            <div class="name">Tung Hoang</div>
+            <div class="title">PM & Co-founder</div>
+            <div class="profile">
+              <a href="https://www.linkedin.com/in/tung-hoang-719b4657" target="_blank">
+                <img src="/img/in.png" height="15px" />
+              </a>
+            </div>
+            <div>
+                Product manager, frontend engineer, open-source developer.
             </div>
           </div>
         </div>
@@ -757,24 +768,24 @@
     <div class="container">
       <h2 class="uppercase text-center margin-60">Connect with us</h2>
       <div class="row text-center margin-40">
-        <div class="col-sm-2 col-sm-offset-1">
-          <a href="#"><img src="/img/slack-icon.png" height="50px" /></a>
+        <div class="col-sm-2 col-sm-offset-2">
+          <a href="https://tomocoin.herokuapp.com" target="_blank"><img src="/img/slack-icon.png" height="50px" /></a>
           <div class="pad-xxs">Chat with the team in real time</div>
         </div>
-        <div class="col-sm-2">
+        <!-- <div class="col-sm-2">
           <a href="#"><img src="/img/twitter-icon.png" height="50px" /></a>
           <div class="pad-xxs">Receive breaking news</div>
-        </div>
+        </div> -->
         <div class="col-sm-2">
-          <a href="#"><img src="/img/facebook-icon.png" height="50px" /></a>
+          <a href="https://www.facebook.com/tomocoin" target="_blank"><img src="/img/facebook-icon.png" height="50px" /></a>
           <div class="pad-xxs">Official update</div>
         </div>
         <div class="col-sm-2">
-          <a href="#"><img src="/img/medium-icon.png" height="50px" /></a>
+          <a href="https://medium.com/tomocoin" target="_blank"><img src="/img/medium-icon.png" height="50px" /></a>
           <div class="pad-xxs">Official tomo blog</div>
         </div>
         <div class="col-sm-2">
-          <a href="#"><img src="/img/bitcoin.png" height="50px" /></a>
+          <a href="https://bitcointalk.org/index.php?topic=2021785.0" target="_blank"><img src="/img/bitcoin.png" height="50px" /></a>
           <div class="pad-xxs">Bitcoin talk</div>
         </div>
       </div>
@@ -821,13 +832,12 @@
           Cau Giay, Hanoi, Vietnam
         </div>
       </div> -->
-      <div class="col-sm-4 col-sm-offset-4 text-center">
+      <div class="col-sm-6 col-sm-offset-2 text-center">
         <div style="font-size: 22px;" class="margin-20"><strong>Tomochain Pte. Ltd.</strong></div>
         <div>
-          Singapore Headquarters<br/>
-          10 Anson Road<br/>
-          International Plaza, #22 - 15<br/>
-          Singapore 079903<br/>
+          Singapore Headquarters, <br/>
+          10 Anson Road #22-15, International Plaza, <br/>
+          Singapore 07990<br/>
           info@tomocoin.io
         </div>
       </div>
