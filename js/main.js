@@ -1,3 +1,4 @@
+
 function showNotifyPopup() {
   var popup = document.getElementById('popupNotify');
   if (popup) {
