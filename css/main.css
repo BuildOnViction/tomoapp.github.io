@@ -53,7 +53,8 @@ h4 {
 }
 
 .tagline {
-  font-size: 45px;
+  font-size: 50px;
+  line-height: 65px;
 }
 .lead {
   font-size: 24px;
@@ -64,6 +65,7 @@ h4 {
 @media(max-width: 767px) {
   .tagline {
     font-size: 30px;
+    line-height: 45px;
   }
 
   .lead {
