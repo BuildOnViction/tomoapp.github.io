@@ -1,119 +1,889 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="/imgs/favicon.ico" />
+  <title>Tomocoin | Token Sale Coming Soon</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Tomo Coin</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="google-site-verification" content="IQirjcMUZ9L5GjnRIsUB9QlDORMQxur9QqA-Ltm2b24" />
-	<link rel="stylesheet" href="./css/style.css">
-	<link rel="stylesheet" href="./css/slideshow.css">
-	<link rel="stylesheet" href="./css/loading.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+  <meta property="og:title" content="Tomocoin | Tomo Network">
+	<meta property="og:type" content="website">
+	<meta property="og:img" content="https://www.tomocoin.io/imgs/logo.jpg">
+	<meta property="og:url" content="https://www.tomocoin.io">
+	<meta property="og:site_name" content="Tomocoin">
+	<meta property="og:description" content="Reimagining Social Network with Cryptocurrency. Subscribe to receive updates about the upcoming token sales">
 
-	<script src="./js/jquery.min.js"></script>
-	<script src="./js/main.js"></script>
-	<script src="./js/slideshow.js"></script>
-	<script src="./js/constellation.js"></script>
-	<script src="./js/submitemail.js"></script>
-	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			var e = document.getElementById('loading');
-			e.style.display = 'none';
-		}, false);
-	</script>
+  <!-- Styles -->
+  <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+  <!-- <link rel="stylesheet" href="css/animate.css"> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.7.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.7.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Hotjar Tracking Code for https://tomocoin.io -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:683059,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
 </head>
+
 <body>
-	<div id="loading" style="position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-		display: flex;
-		align-items: center;
-		background: #fff;
-		z-index: 999">
-		<div class="sk-folding-cube">
-			<div class="sk-cube1 sk-cube"></div>
-			<div class="sk-cube2 sk-cube"></div>
-			<div class="sk-cube4 sk-cube"></div>
-			<div class="sk-cube3 sk-cube"></div>
-		</div>
-	</div>
-	<div class="slider" id="main-slider">
-		<div class="slider-wrapper">
-			<img src="./imgs/background1.jpg" alt="First" class="slide" />
-			<img src="./imgs/background2.jpg" alt="Second" class="slide" />
-			<img src="./imgs/background3.jpg" alt="Third" class="slide" />
-			<img src="./imgs/background4.jpg" alt="Four" class="slide" />
-		</div>
-	</div>
+  <div class="navbar navbar-inverse navbar-fixed-top open-xs">
+    <div class="container">
+      <div class="navbar-header">
 
-	<!-- Overlay and Constellation effect -->
-	<div class="global_overlay">
-		<canvas id="constellationel" width="100%" height="100%"></canvas>
-		<div class="overlay skew-part"></div>
-	</div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="logo" href="#" style="width: 40px; height: 40px; margin-top: 2px;">
+          <img src="./imgs/1.png" class="logo1"></img>
+          <img src="./imgs/2.png" class="logo2"></img>
+          <img src="./imgs/t.png" class="logot"></img>
+        </a>
+      </div>
+      <div class="dropdown visible-xs" style="position: absolute; top: 10px; right: 70px;">
+        <button class="language dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <img src="/img/lang.svg" style="margin-right: 5px;"/> ENG
+          <!-- <span class="caret"></span> -->
+        </button>
+        <!-- <ul class="dropdown-menu" style="right: 0;" aria-labelledby="dropdownMenu1">
+          <li><a href="#" style="margin-left: 0">RU</a></li>
+          <li><a href="#" style="margin-left: 0">VI</a></li>
+          <li><a href="#" style="margin-left: 0">CN</a></li>
+        </ul> -->
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right visible-xs">
+          <li><a href="#about" class="scroll" data-toggle="collapse" data-target=".navbar-collapse">Introduction</a></li>
+          <li><a href="#application" class="scroll" data-toggle="collapse" data-target=".navbar-collapse">Application</a></li>
+          <li><a href="#roadmap" class="scroll" data-toggle="collapse" data-target=".navbar-collapse">Roadmap</a></li>
+          <!-- <li><a href="#collaborator" class="scroll" data-toggle="collapse" data-target=".navbar-collapse">Partners</a></li> -->
+          <li><a href="#team" class="scroll" data-toggle="collapse" data-target=".navbar-collapse">Team</a></li>
+          <li><a href="#contact" class="scroll" data-toggle="collapse" data-target=".navbar-collapse">Community</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right hidden-xs">
+          <li><a href="#about" class="scroll">Introduction</a></li>
+          <li><a href="#application" class="scroll">Application</a></li>
+          <li><a href="#roadmap" class="scroll">Roadmap</a></li>
+          <!-- <li><a href="#collaborator" class="scroll">Partners</a></li> -->
+          <li><a href="#team" class="scroll">Team</a></li>
+          <li><a href="#contact" class="scroll">Community</a></li>
+          <li>
+            <div class="dropdown" style="display: inline-block;">
+              <button class="language dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <img src="/img/lang.svg" style="margin-right: 5px;"/> ENG
+                <!-- <span class="caret"></span> -->
+              </button>
+              <!-- <ul class="dropdown-menu" style="right: 0;" aria-labelledby="dropdownMenu1">
+                <li><a href="#" style="margin-left: 0">RU</a></li>
+                <li><a href="#" style="margin-left: 0">VI</a></li>
+                <li><a href="#" style="margin-left: 0">CN</a></li>
+              </ul> -->
+            </div>
+          </li>
+        </ul>
+      </div>
 
-	<div class="container">
-		<div class="logo">
-			<img src="./imgs/1.png" class="logo1"></img>
-			<img src="./imgs/2.png" class="logo2"></img>
-			<img src="./imgs/t.png" class="logot"></img>
-		</div>
-		<div class="message">
-			<h2>Token sale</h2>
-			<h1>COMING SOON</h1>
-			<div class="message-text">
-				Tomocoin is the cryptocurrency that powers the decentralized knowledge sharing platform Tomo.
-				Tomo network and Tomocoin is seamlessly merging a knowledge and social application useful for million of mainstream users with blockchain and cryptocurrency allowing for a secure,
-				decentralized and trustless store of value. We are seasoned engineers, researchers and crypto-economists who has built billion of dollar blockchain and we are pioneers of the new “Internet of Value” .
-				Join us to make a difference and build the future.
-			</div>
+    </div>
+  </div>
 
-			<div style="margin-top: 40px">
-				<button class="button" onclick="showNotifyPopup()">Notify Me!</button>
-			</div>
-		</div>
+  <header>
+    <canvas id="constellationel" width="100%" height="100%" style="margin: -40px -10px; position: absolute;"></canvas>
+    <div class="container">
+      <div class="row hidden-xs">
+        <div class="col-xs-1">
+          <a class="logo" href="#">
+            <img src="./imgs/1.png" class="logo1"></img>
+            <img src="./imgs/2.png" class="logo2"></img>
+            <img src="./imgs/t.png" class="logot"></img>
+          </a>
+        </div>
+        <div class="col-xs-11 signin text-right navbar-nav">
+          <a href="#about" class="scroll">Introduction</a>
+          <a href="#application" class="scroll">Application</a>
+          <a href="#roadmap" class="scroll">Roadmap</a>
+          <!-- <a href="#collaborator" class="scroll">Partners</a> -->
+          <a href="#team" class="scroll">Team</a>
+          <a href="#contact" class="scroll">Community</a>
 
-		<div class="socials-container">
-			<a class="socials-icon" href="https://www.facebook.com/tomocoin" target="_blank">
-				<img src="./imgs/facebook-icon.png" />
-			</a>
-			<a class="socials-icon" href="https://tomocoin.herokuapp.com/" target="_blank">
-				<img src="./imgs/slack-icon.png" />
-			</a>
-			<a class="socials-link" href="https://bitcointalk.org/index.php?topic=2021785.0" target="_blank">
-				Bitcoin Talk
-			</a>
-			<a class="socials-link" href="https://tomoapp.com/" target="_blank">
-				Tomo app
-			</a>
-		</div>
-	</div>
+          <div class="dropdown" style="display: inline-block;">
+            <button class="language dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <img src="/img/lang.svg" style="margin-right: 5px;"/> ENG
+              <!-- <span class="caret"></span> -->
+            </button>
+            <!-- <ul class="dropdown-menu" style="right: 0;" aria-labelledby="dropdownMenu1">
+              <li><a href="#" style="margin-left: 0">RU</a></li>
+              <li><a href="#" style="margin-left: 0">VI</a></li>
+              <li><a href="#" style="margin-left: 0">CN</a></li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
 
-	<div id="popupNotify" class="overlay" style="display: none" onclick="overlayClick(event)">
-		<div class="popup">
-			<button class="popup-close" onclick="closePopup('popupNotify')">
-				<img src="./imgs/close.svg" width="100%" />
-			</button>
-			<div class="popup-text">
-				Get updates leading up to the Token sale
-			</div>
-			<div>
-				<input id="email" type="email" class="popup-input" placeholder="Enter your email" onkeypress="keyPressEmail(event)"/>
-				<div class="alert-error" style="display: none">
-					Email is invalid, Please try again.
-				</div>
-				<div class="alert-success" style="display: none">Thank you. We will send email updates to your email address.</div>
-				<button id="submit" class="popup-btn popup-btn-get-notified" onclick="submitEmail()">Get notified</button>
-			</div>
-			<a target="_blank" href="https://tomocoin.herokuapp.com/">
-				<button onclick="closePopup('popupNotify')" class="popup-btn popup-btn-join-slack">Join the slack</button>
-			</a>
-		</div>
-	</div>
-	<script type="text/javascript">
+      <div class="row header-info c-white">
+        <div class="col-sm-10 col-sm-offset-1 text-center">
+          <h1 class="tagline hidden-xs">
+            Reimagining Social Network<br/>
+            with Cryptocurrency
+          </h1>
+          <h1 class="tagline visible-xs">
+            Reimagining Social Network
+            with Cryptocurrency
+          </h1>
+          <br />
+          <br />
+          <br />
+          <p class="lead fadeIn" style="font-size: 20px;">Subscribe to receive updates about the upcoming token sales</p>
+          <br />
+          <div id="mailing-list" class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-2 margin-10">
+                <input id="email" type="email" class="email-input m-text-center" placeholder="Enter your email" onkeypress="keyPressEmail(event)"/>
+                <div class="alert-error-valid text-center" style="display: none">Email is invalid, Please try again.</div>
+                <div class="alert-error text-center" style="display:none"><span>Error, Please try again or use this <a target="_blank" href="https://goo.gl/forms/L3aSO5Xw1mVwt9Xr2">link</a></span></div>
+              </div>
+              <div class="col-sm-2 m-text-center margin-10">
+                <button id="submit" class="btn btn-primary" style="width: 100%; min-width: inherit;" onclick="submitEmail()">
+                  Submit
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <div class="alert-success text-center" style="display: none">
+                  <div class="margin-10">Thank you. We will send email updates to your email address.</div>
+                  <div style="color: #333">
+                    <a href="https://tomocoin.herokuapp.com" target="_blank">
+                      <img src="/img/slack-icon.png" height="20px" />
+                      &nbsp;Join the slack
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+              <div class="row">
+                <div class="col-xs-6 text-right fadeInUp">
+                  <a href="https://goo.gl/z4C42U" target="_blank" class="btn btn-outline btn-secondary">WHITE PAPER</a>
+                </div>
+                <div class="col-xs-6 text-left fadeInUp">
+                  <a href="https://tomoapp.com/" target="_blank" class="btn btn-primary">TOMOAPP</a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="media-articles">
+    <div class="container">
+      <div>
+        <a href="https://medium.com/tomocoin/the-missing-roles-in-social-network-e17f7be46d60" target="_blank">
+          <img src="/img/medium_2017_logo_2.png" />
+        </a>
+        <a href="https://thenextweb.com/contributors/2017/08/21/blockchain-can-make-social-networks-private-profitable/#.tnw_ASnqGiyC" target="_blank">
+          <img src="/img/tnw.png" />
+        </a>
+        <a href="https://hackernoon.com/a-vision-of-the-internet-of-value-ad187abf5826" target="_blank">
+          <img src="/img/hackernoon.png" />
+        </a>
+        <a href="https://www.wired.com/story/the-social-network-doling-out-millions-in-ephemeral-money/?mbid=social_fb_onsiteshare" target="_blank">
+          <img src="/img/wired_logo.png" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <section id="about" class="pad-sm">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 fadeIn">
+          <h2 class="uppercase m-text-center">​Introduction​</h2>
+          <div class="margin-30 text-justify">
+            We are building a new social network from ground up with a built-in cryptocurrency. The core values are:<br/>
+            - <b>Contributor's role</b>: The network is created by and for contributors. Help solving other's problems; create and publish useful contents and receive rewards from the network.<br/>
+            - <b>Built-in micro payment</b> with a store of value characteristics: unique architecture allowing for an easy monetization with micropayment in publishing, gaming, crowdfunding etc. but also a secure store of value of coin on a public blockchain.<br/>
+            - <b>First rate usability</b> using technology such as mobile first, AI, AR, location and camera based services.<br/>
+            - <b>User privacy</b>: no tracking, no data mining and surveillance; allowing for anonymous identity and content creation.
+          </div>
+          <div>
+            <a href="https://goo.gl/z4C42U" target="_blank"  class="btn btn-default">White paper</a>
+          </div>
+        </div>
+        <div class="col-sm-6 fadeIn" style="padding-top: 90px;">
+          <div class="videos-slider">
+            <div>
+              <iframe width="100%" height="250px" src="https://www.youtube.com/embed/okTcuq9VsAA?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div>
+              <iframe width="100%" height="250px" src="https://www.youtube.com/embed/CaVHM7ZoYlI?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div>
+              <iframe width="100%" height="250px" src="https://www.youtube.com/embed/FtZPhMRqdLo?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="vision" class="pad-sm">
+    <div class="container">
+      <h2 class="text-center text-uppercase margin-60">Our vision</h2>
+      <!-- <hr style="width: 290px;" class="margin-60" /> -->
+      <div class="row">
+        <div class="text-center margin-30 col-sm-offset-1 col-sm-10" style="font-size: 16px;">
+          Our mission is to be a leading force in building the Internet of Value, designing its
+          infrastructures and working toward a reality that will make knowledge, decentralization,
+          financial independence, and opportunities accessible to everyone, everywhere.
+        </div>
+      </div>
+    </div>
+    <div style="max-width: 100%;">
+      <div class="vision-slider">
+        <div class="vision-card">
+          <h3 class="text-uppercase">Balaji Srinivasan</h3>
+          <h4>CEO 21.co</h4>
+          <hr />
+          <div>
+            "Blockchain will turn the internet into the world's largest
+            'stock' market - I think tokenization eventually means everyone
+            becomes an investor, once all the regulatory issues are worked
+            out — from your computer itself to a kid in India messing
+            around with $10." - <a href="https://www.cnbc.com/2017/09/05/balaji-srinivasan-21-co-interview-on-blockchain.html" target="_blank">on CNBC interview</a>
+          </div>
+        </div>
+
+        <div class="vision-card">
+          <h3 class="text-uppercase">Nick Szabo</h3>
+          <h4>Smart contract pioneer</h4>
+          <hr />
+          <div>
+            "These initial Internet efforts have been very centralized.
+            Blockchain technology, which implements data integrity via computer
+            science rather than via “call the cops”, has so far made possible
+            trust-minimized money -- cryptocurrencies – and will let us make progress in other
+            financial areas as well as other areas where transactions can be based
+            primarily on data available online." -
+            <a href="http://unenumerated.blogspot.com/2017/02/money-blockchains-and-social-scalability.html" target="_blank">Blog post on 2/9/2017</a>
+          </div>
+        </div>
+
+        <div class="vision-card">
+          <h3 class="text-uppercase">Naval Ravikant</h3>
+          <h4>CEO AngelList</h4>
+          <hr />
+          <div>
+            "Blockchains are a new invention that allows meritorious
+            participants in an open network to govern without a ruler
+            and without money. They are merit-based, tamper-proof,
+            open, voting systems. The meritorious are those who work
+            to advance the network. As society gives you money for giving
+            society what it wants, blockchains give you coins for giving the
+            network what it wants..." -
+            <a href="https://twitter.com/naval/status/877469715160903680" target="_blank">Twitter storm on 6/21/2017</a>
+          </div>
+        </div>
+
+        <div class="vision-card">
+          <h3 class="text-uppercase">Chris Dixon</h3>
+          <h4>Investor and Researcher at A16Z</h4>
+          <hr />
+          <div>
+            "...Tokens are a breakthrough in open network design that enable:
+            1) the creation of open, decentralized networks that combine the best architectural
+            properties of open and proprietary networks, and
+            2) new ways to incentivize open network participants,
+            including users, developers, investors, and service providers..." -
+            <a href="https://medium.com/@cdixon/crypto-tokens-a-breakthrough-in-open-network-design-e600975be2ef" target="_blank">Blog post on 6/1/2017</a>
+          </div>
+        </div>
+
+        <div class="vision-card">
+          <h3 class="text-uppercase">Satoshi Nakamoto</h3>
+          <h4>Inventor of Bitcoin</h4>
+          <hr />
+          <div>
+            "The root problem with conventional currency is all
+            the trust that's required to make it work. The central
+            bank must be trusted not to debase the currency, but the
+            history of fiat currencies is full of breaches of that trust.
+            Banks must be trusted to hold our money and transfer it electronically,
+            but they lend it out in waves of credit bubbles with barely
+            a fraction in reserve..." -
+            <a href="http://satoshi.nakamotoinstitute.org/posts/p2pfoundation/1/" target="_blank">on 2/11/2009</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <h2 id="application" class="text-uppercase text-center margin-50" style="padding-top: 60px">Application</h2>
+  <!-- <hr style="width: 290px;" class="margin-50" /> -->
+
+  <section id="tomoapp" class="pad-sm">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 hidden-xs fadeIn">
+          <img src="/img/tomoapp-demo.png" width="100%" style="margin-top: 30px;" />
+        </div>
+        <div class="col-sm-6 fadeIn">
+          <h3 class="uppercase d-text-right m-text-center">Tomoapp</h3>
+          <h3 class="d-text-right m-text-center">​Tomo Q&A and Blogging social network</h3>
+          <div class="margin-30 text-justify">
+            Tomo application will be the flagship consumer application within the Tomo
+            network. There is a strong strategy for product development and user adoption for Tomo
+            applications already in place. The beta version is now available at
+            <a href="https://goo.gl/uuGYJY" target="_blank">tomoapp.com</a>,
+            and free download at the Apple App Store and Google Play Store:
+          </div>
+          <div class="margin-20">
+            <div class="m-text-center d-text-right">
+              <a href="https://goo.gl/uuGYJY" target="_blank" style="padding: 0 5px;" class="webapp">
+                <img src="/img/webapp.png" class="appstore" height="40px" />
+              </a>
+              <a href="https://goo.gl/s3nvFs" target="_blank" style="padding: 0 5px;">
+                <img src="/img/appstore.png" class="appstore" height="40px" />
+              </a>
+              <a href="https://goo.gl/imvNHp" target="_blank" style="padding: 0 5px;">
+                <img src="/img/google-play.png" class="appstore" height="40px" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 visible-xs fadeIn">
+          <img src="/img/tomoapp-demo.png" width="100%" style="margin-top: 30px;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="feature-tomoapp" class="pad-sm" style="padding-bottom: 0">
+    <div class="container">
+      <h3 class="uppercase text-center margin-60">Tomoapp Features</h3>
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <div class="feature-item">
+            <div class="feature-item-img"><img src="/img/tomoapp/1.svg" /></div>
+            <h4 class="text-uppercase">Mobile app & webapp</h4>
+            <div>The Tomoapp is available on both Android, iOS and browser</div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="feature-item">
+            <div class="feature-item-img"><img src="/img/tomoapp/10.svg" /></div>
+            <h4 class="text-uppercase">Peer to peer question and open question</h4>
+            <div>Send a question to a friend or expert. Make an open question for everyone</div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="feature-item">
+            <div class="feature-item-img"><img src="/img/tomoapp/11.svg" /></div>
+            <h4 class="text-uppercase">Answer via 1 minute video or text</h4>
+            <div>One minute video is brilliant to answer and watch. A texted answer is a plus</div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <div class="feature-item">
+            <div class="feature-item-img"><img src="/img/tomoapp/9.svg" /></div>
+            <h4 class="text-uppercase">Multi language community</h4>
+            <div>Support diverse demands</div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="feature-item">
+            <div class="feature-item-img"><img src="/img/tomoapp/3.svg" /></div>
+            <h4 class="text-uppercase">Personalization feed</h4>
+            <div>Anything you see is the best for you</div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="feature-item">
+            <div class="feature-item-img"><img src="/img/tomoapp/5.svg" /></div>
+            <h4 class="text-uppercase">Channel</h4>
+            <div>Create your content and spread your story. Or just be an active “lurker”/fan</div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <div class="feature-item">
+            <div class="feature-item-img"><img src="/img/tomoapp/7.svg" /></div>
+            <h4 class="text-uppercase">Instant messaging</h4>
+            <div>Communicate directly with ones you connect with</div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="feature-item">
+            <div class="feature-item-img"><img src="/img/tomoapp/8.svg" /></div>
+            <h4 class="text-uppercase">Friends and followers</h4>
+            <div>Connect with your friends and your fans or Follow experts and stars you admire</div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="feature-item">
+            <div class="feature-item-img"><img src="/img/tomoapp/2.svg" /></div>
+            <h4 class="text-uppercase">Comment and mention</h4>
+            <div>Join discussion, comment (non-)anonymously/ and mention someone also interested in</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="wallet" class="pad-sm">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 fadeIn">
+          <h3 class="uppercase m-text-center">Wallet</h3>
+          <div class="margin-30 text-justify">
+            In our opinion, a secure and user-friendly coin wallet that gives financial control back to
+            the end-users is one of the most important parts of the infrastructure of the “Internet of
+            Value”. It will bridge the gap between a cryptocurrency enthusiast and a mainstream
+            user – and possibly increase the adoption rate of cryptocurrency by 10-fold if done right.
+            We want to invest in building such a wallet, firstly to host Tomocoin and Ethereum and
+            later multiple other cryptographic tokens and currencies.
+          </div>
+          <div>
+            <div class="row margin-30">
+              <div class="col-xs-2 text-center">
+                <img src="/img/wallet/1.svg" style="max-width: 100%;" />
+              </div>
+              <div class="col-xs-9">
+                To safely store Tomocoin, Ethereum,
+                and other coins and tokens
+              </div>
+            </div>
+            <div class="row margin-30">
+              <div class="col-xs-2 text-center">
+                <img src="/img/wallet/2.svg" style="max-width: 100%;" />
+              </div>
+              <div class="col-xs-9">
+                A Tomo debit card will be linked with
+                Tomo wallet for payments in physical locations
+              </div>
+            </div>
+            <div class="row margin-30">
+              <div class="col-xs-2 text-center">
+                <img src="/img/wallet/3.svg" style="max-width: 100%;" />
+              </div>
+              <div class="col-xs-9">
+                  To safely store Tomocoin, Ethereum, and other coins and tokens
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 hidden-xs fadeIn text-center">
+          <!-- <img src="/img/wallet-demo.png" width="100%" style="margin-top: 30px;" /> -->
+          <div style="position: relative; width: 55%; margin: auto; margin-top: -0px; margin-bottom: 70px">
+            <img src="/img/iphone.png" style="width:100%; position: absolute; top: 0; left: 0;"></img>
+            <video
+              src="/img/wallet-apple-ios.mp4"
+              poster="/img/walletdemo.png"
+              autoplay loop style="margin-top: 48px; width: 95%; position: relative;"></video>
+          </div>
+        </div>
+        <div class="col-sm-6 visible-xs fadeIn">
+          <!-- <video src="/img/wallet-apple-ios.mp4" autoplay width="100%" /> -->
+          <img src="/img/wallet-demo.png" width="100%" style="margin-top: 30px;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="debit" class="pad-sm">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 hidden-xs fadeIn">
+          <img src="/img/debit-demo.png" width="100%" style="margin-top: 30px" />
+        </div>
+        <div class="col-sm-6 fadeIn">
+          <h3 class="uppercase d-text-right m-text-center">Debit Card</h3>
+          <div class="margin-30 text-justify">
+            Connect your Tomo account wallet to your Tomo debit card to spend your
+            coins as fiat currency anywhere in the world.
+            Fees will be minimal and as the card uses Visa infrastructure
+            you can use it almost anywhere in the world.
+          </div>
+        </div>
+        <div class="col-sm-6 visible-xs fadeIn">
+          <img src="/img/debit-demo.png" width="100%" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap" class="pad-sm">
+    <div class="container">
+      <h2 class="uppercase text-center margin-90">Roadmap</h2>
+      <!-- <hr style="width: 290px;" class="margin-90" /> -->
+      <ul class="timeline">
+        <li>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h3 class="timeline-title">Q2/2017</h3>
+              <h3 class="timeline-title">Alpha launch</h3>
+            </div>
+            <div class="timeline-body">
+              <p>• Android/iOS app</p>
+              <p>• Peer to peer Question and answer</p>
+              <p>• Answer via Video in 1 minute</p>
+              <p>• Open question space</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h3 class="timeline-title">Q3/2017</h3>
+              <h3 class="timeline-title">Beta launch</h3>
+            </div>
+            <div class="timeline-body">
+              <p>• Multiple language communities</p>
+              <p>• Answer in text</p>
+              <p>• Notification system</p>
+              <p>• Anonymous questions, comments</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h3 class="timeline-title">Q4/2017</h3>
+              <h3 class="timeline-title">Tomoapp update</h3>
+              <h4 class="timeline-title" style="color: #50e3c2">(We are here)</h4>
+            </div>
+            <div class="timeline-body">
+              <p>• Topics and hashtags</p>
+              <p>• AMA System - Ask me anything</p>
+              <p>• Private messages</p>
+              <p>• New search engine and AI design</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h3 class="timeline-title">Q1/2018</h3>
+              <h3 class="timeline-title">Tomoapp update & wallet</h3>
+            </div>
+            <div class="timeline-body">
+              <p>• Personalization of home feed with AI</p>
+              <p>• Upgrade video editor</p>
+              <p>• Wallet version 1</p>
+              <p>• APIs available for 3th parties</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h3 class="timeline-title">Q2/2018</h3>
+              <h3 class="timeline-title">Coin integration</h3>
+            </div>
+            <div class="timeline-body">
+              <p>• Tomocoin integration</p>
+              <p>• Reward engine integration</p>
+              <p>• Ask question via coin</p>
+              <p>• Boost content</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h3 class="timeline-title">Q3/2018</h3>
+              <h3 class="timeline-title">Live stream & Debit card</h3>
+            </div>
+            <div class="timeline-body">
+              <p>• Live streaming capability</p>
+              <p>• Monetization of personal channel</p>
+              <p>• Upgrade APIs for 3th party bots and app</p>
+              <p>• Tomo Debit card</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h3 class="timeline-title">Q4/2018</h3>
+              <h3 class="timeline-title">Tomochain & Upgraded Wallet</h3>
+            </div>
+            <div class="timeline-body">
+              <p>• Tomochain design specification</p>
+              <p>• Smart contract templates</p>
+              <p>• Decentralized exchange integration</p>
+              <p>• Token management</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-end">
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h3 class="timeline-title">Future</h3>
+              <h3 class="timeline-title">Make Tomocoin more value</h3>
+            </div>
+            <div class="timeline-body">
+              <p>• Build community</p>
+              <p>• New products</p>
+              <p>• ICO platform</p>
+              <p>• Autonomous decentralized governance</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- <section id="testimonial" class="pad-sm">
+    <div class="container">
+      <h2 class="uppercase text-center">Testimonial</h2>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="testimonial-for">
+            <div class="testimonial-text">
+              "What is money? Everyone seems to think they know what money is. Money is the dollar bill I am holding. Money is gold. Money is the number in my bank account — or Bitcoin wallet."
+            </div>
+            <div class="testimonial-text">
+              "In the Internet Age, we have also witnessed new inventions in the field of money technology — and if the Internet is one of the most important inventions in the history of humankind"
+            </div>
+            <div class="testimonial-text">
+              "While cryptocurrency is currently behind in safety, scalability, and acceptability, the combination of radical transparency, global accessibility, efficiency, and most importantly."
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="testimonial-nav col-sm-10 col-sm-offset-1">
+          <div class="nav-item">
+            <img src="/img/team/1.jpg" width="100%" />
+            <div class="name">Long Vuong</div>
+            <div class="title">CEO & Founder at Tomo</div>
+          </div>
+          <div class="nav-item">
+            <img src="/img/team/11.jpg" width="100%" />
+            <div class="name">Tung Hoang</div>
+            <div class="title">PM & Co-Founder at Tomo</div>
+          </div>
+          <div class="nav-item">
+            <img src="/img/team/2.jpg" width="100%" />
+            <div class="name">Son Nguyen</div>
+            <div class="title">CTO at Tomo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section id="collaborator" class="pad-sm">
+    <div class="container">
+      <h2 class="uppercase text-center margin-60">Partners</h2>
+      <div class="row text-center">
+        <div class="col-sm-3">
+          <a href="#"><img src="/img/news_bitcoinmagazine_grey.png" height="30px" /></a>
+        </div>
+        <div class="col-sm-3">
+          <a href="#"><img src="/img/news_ethnews_grey.png" height="30px" /></a>
+        </div>
+        <div class="col-sm-3">
+          <a href="#"><img src="/img/news_huff_grey.png" height="30px" /></a>
+        </div>
+        <div class="col-sm-3">
+          <a href="#"><img src="/img/news_inc_grey.png" height="30px" /></a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="team" class="pad-sm">
+    <div style="width: 95%; margin: auto;">
+      <h2 class="uppercase text-center margin-60">Our team</h2>
+      <div class="row text-center">
+        <div class="col-sm-3 team-member">
+          <img src="/img/team/1.jpg" />
+          <div class="team-member-info">
+            <div class="name">Long Vuong</div>
+            <div class="title">Founder & Project Lead</div>
+            <div class="profile">
+              <a href="https://twitter.com/longvuong22" target="_blank">
+                <img src="/img/t.png" height="15px" />
+              </a>
+              <a href="https://www.linkedin.com/in/longvuong22" target="_blank">
+                <img src="/img/in.png" height="15px" />
+              </a>
+            </div>
+            <div>
+                CEO and founder of Tomoapp, co-founder of NEM blockchain, PhD in economics, crypto-economics researcher.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 team-member">
+          <img src="/img/team/2.jpg" />
+          <div class="team-member-info">
+            <div class="name">Son Nguyen</div>
+            <div class="title">CTO</div>
+            <div class="profile">
+              <a href="https://www.linkedin.com/in/thanhson1085" target="_blank">
+                <img src="/img/in.png" height="15px" />
+              </a>
+            </div>
+            <div>
+                Engineering Director of Tomoapp. Seasoned technical leader. Dev-Ops and microservice architecture expert.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 team-member">
+          <img src="/img/team/11.jpg" />
+          <div class="team-member-info">
+            <div class="name">Tung Hoang</div>
+            <div class="title">PM & Co-founder</div>
+            <div class="profile">
+              <a href="https://www.linkedin.com/in/tung-hoang-719b4657" target="_blank">
+                <img src="/img/in.png" height="15px" />
+              </a>
+            </div>
+            <div>
+                Product manager of Tomoapp, frontend engineer, growth hacker, open-source developer.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 team-member">
+          <img src="/img/team/12.jpg" />
+          <div class="team-member-info">
+            <div class="name">Minh Chu</div>
+            <div class="title">Blockchain and Cloud Lead</div>
+            <div class="profile">
+              <a href="https://www.linkedin.com/in/chu-duc-minh-1773a229/" target="_blank">
+                <img src="/img/in.png" height="15px" />
+              </a>
+            </div>
+            <div>
+              Cloud Chief Architect of VCCloud - one of biggest local cloud-provider in South East Asia. Technology and security advisor.
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="text-center">To be updated later</h3>
+    </div>
+  </section>
+
+  <section id="contact" class="pad-sm">
+    <div class="container">
+      <h2 class="uppercase text-center margin-60">Connect with us</h2>
+      <div class="row text-center margin-40">
+        <div class="col-sm-2 col-sm-offset-2">
+          <a href="https://tomocoin.herokuapp.com" target="_blank"><img src="/img/slack-icon.png" height="50px" /></a>
+          <div class="pad-xxs">Chat with the team in real time</div>
+        </div>
+        <!-- <div class="col-sm-2">
+          <a href="#"><img src="/img/twitter-icon.png" height="50px" /></a>
+          <div class="pad-xxs">Receive breaking news</div>
+        </div> -->
+        <div class="col-sm-2">
+          <a href="https://www.facebook.com/tomocoin" target="_blank"><img src="/img/facebook-icon.png" height="50px" /></a>
+          <div class="pad-xxs">Official update</div>
+        </div>
+        <div class="col-sm-2">
+          <a href="https://medium.com/tomocoin" target="_blank"><img src="/img/medium-icon.png" height="50px" /></a>
+          <div class="pad-xxs">Official tomo blog</div>
+        </div>
+        <div class="col-sm-2">
+          <a href="https://bitcointalk.org/index.php?topic=2021785.0" target="_blank"><img src="/img/bitcoin.png" height="50px" /></a>
+          <div class="pad-xxs">Bitcoin talk</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="mailing-list" class="pad-sm">
+    <div class="container">
+      <h2 class="uppercase text-center margin-30">Mailing List</h2>
+      <div class="text-center margin-30" style="font-size: 24px;">Subscribe to our email list to receive news and updates</div>
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-2 margin-10">
+          <input id="email" type="email" class="email-input m-text-center" placeholder="Enter your email" onkeypress="keyPressEmail(event)"/>
+          <div class="alert-error-valid text-center" style="display: none">Email is invalid, Please try again.</div>
+          <div class="alert-error text-center" style="display:none"><span>Error, Please try again or use this <a target="_blank" href="https://goo.gl/forms/L3aSO5Xw1mVwt9Xr2">link</a></span></div>
+        </div>
+        <div class="col-sm-2 m-text-center margin-10">
+          <button id="submit" class="btn btn-primary" style="width: 100%; min-width: inherit;" onclick="submitEmail()">
+            Submit
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="alert-success text-center" style="display: none">Thank you. We will send email updates to your email address.</div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="col-sm-4 m-text-center margin-50">
+        <a class="logo" href="#">
+          <img src="./imgs/1.png" class="logo1"></img>
+          <img src="./imgs/2.png" class="logo2"></img>
+          <img src="./imgs/t.png" class="logot"></img>
+        </a>
+      </div>
+      <div class="col-sm-5 text-center">
+        <div style="font-size: 22px;" class="margin-20"><strong>Tomochain Pte. Ltd.</strong></div>
+        <div>
+          Singapore Headquarters, <br/>
+          10 Anson Road #22-15, International Plaza, <br/>
+          Singapore 07990<br/>
+          info@tomocoin.io
+        </div>
+      </div>
+
+      <div class="col-sm-3 text-center margin-60">
+        <div style="font-size: 22px;" class="margin-20"><strong>Tomoapp Vietnam</strong></div>
+        <div>
+          Lot 11 Constrexim Yen Hoa,<br/>
+          Cau Giay, Hanoi, Vietnam
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/mainv2.js"></script>
+  <script src="js/constellation.js"></script>
+  <script type="text/javascript">
     adroll_adv_id = "SNYYXEEOWBBXFIO2HEWYAF";
     adroll_pix_id = "Q6OQ3PE7G5DXHNTV4NII6Q";
     /* OPTIONAL: provide email to improve user identification */
@@ -133,6 +903,52 @@
         if (window.addEventListener) {window.addEventListener('load', _onload, false);}
         else {window.attachEvent('onload', _onload)}
     }());
+  </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+   ga('create', 'UA-102649191-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2100813266602932');
+  fbq('track', 'PageView');
 </script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2100813266602932&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2119127414981373');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2119127414981373&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
 </body>
 </html>
