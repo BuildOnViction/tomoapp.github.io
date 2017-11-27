@@ -54,6 +54,8 @@ function submitEmail() {
         $('#mailing-list .alert-success').show();
         $('#mailing-list #submit').hide();
         $("#mailing-list input#email").hide();
+        fbqtrack('track', 'CompleteRegistration');
+        ga('send', 'home_email_submit', 'submit_email', 'email');
       },
       error: function (e) {
         $('#mailing-list .alert-error').show();
