@@ -109,6 +109,10 @@ p {
     text-align: right !important;
   }
 
+  .d-text-left {
+    text-align: left !important;
+  }
+
   .d-text-center {
     text-align: center !important;
   }
