@@ -369,8 +369,8 @@ a:hover, a:focus {
    Main styles
    ========================================================================== */
 header {
-  /*background: url(../img/header-bg.jpg) no-repeat center center;*/
-  background-color: #333;
+  background: url(../img/header-bg.jpg) no-repeat center center;
+  /*background-color: #333;*/
   width: 100%;
   padding: 40px 10px 60px 10px;
   height: calc(100vh - 80px);
