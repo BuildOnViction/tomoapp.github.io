@@ -1001,7 +1001,7 @@ footer {
 }
 .timeline:before {
   top: 0;
-  bottom: 230px;
+  bottom: 270px;
   position: absolute;
   content: " ";
   width: 3px;
@@ -1133,7 +1133,7 @@ padding-left:90px;
 @media(max-width: 767px) {
   .timeline:before {
     left: 20px;
-    bottom: 170px;
+    bottom: 220px;
   }
 
   .timeline > li {
